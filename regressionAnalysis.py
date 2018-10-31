@@ -16,13 +16,14 @@ import matplotlib.pyplot as plt
 ################################################################################
 #I worked with Jacob Paul, Hannah Weber, Taylor Lawrence, Jack Sandberg 
 
-# PROBLEM 1. Using the candy-data.csv file in the repo, populate an AnalysisData object that will hold the data you'll use for today's problem set. You should read in the data from the CSV, store the data in the dataset variable, and initialize the xs (column name) and targetY variables appropriately. targetY should reference the variable describing whether or not a candy is chocolate.
- 
+
+#(a) AnalysisData, which will have, at a minimum, attributes called dataset (which holds the parsed dataset) and variables (which will hold a list containing the indexes for all of the variables in your data). 
+
 class AnalysisData:
     #^ This is the initialization function
     #__ private reserved function that goes into Analysis
         
-#Initialize any attributes and handle preprocessing 
+#Initialize (init) any attributes and handle preprocessing 
     def __init__(self):
         self.type = type
         self.dataset= []
@@ -40,16 +41,20 @@ class AnalysisData:
 data = AnalysisData()
 data.parseFile("candy-data.csv")
 
-# Store the data in the dataset variable 
+#(b) LinearAnalysis, which will contain your functions for doing linear regression and have at a minimum attributes called bestX (which holds the best X predictor for your data), targetY (which holds the index to the target dependent variable), and fit (which will hold how well bestX predicts your target variable).
 
-# Initialize the xs and targetY 
-# Target 
+class 
 
+#(c) LogisticAnalysis, which will contain your functions for doing logistic regression and have at a minimum attributes called bestX (which holds the best X predictor for your data), targetY (which holds the index to the target dependent variable), and fit (which will hold how well bestX predicts your target variable).
+
+
+# PROBLEM 1. Using the candy-data.csv file in the repo, populate an AnalysisData object that will hold the data you'll use for today's problem set. You should read in the data from the CSV, store the data in the dataset variable, and initialize the xs (column name) and targetY variables appropriately. targetY should reference the variable describing whether or not a candy is chocolate.
 
 #PROBLEM 2. Create a function to initialize a LinearAnalysis object that takes a targetY as its input parameter. Create the same function for LogisticAnalysis. Note that you will use the LinearAnalysis object to try to predict the amount of sugar in the candy and the LogisticAnalysis object to predict whether or not the candy is chocolate.
 
+class 
 #Create the function
-#def LinearAnalysis()
+def LinearAnalysis()
 # Use the LinearAnalysis object to predict the amount of sugar in the candy
 
 # Use the LogisticAnalysis object to predict whether or not the candy is chocolate 
