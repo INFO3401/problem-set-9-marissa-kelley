@@ -2,14 +2,11 @@
 #Due 11.4.18
 
 #Import all the things
-#import sqlite 
-#import parsers
 import pandas as pd
 import csv 
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LogisticRegression
-
 import matplotlib.pyplot as plt
 ################################################################################
 # MONDAY WORK 
@@ -86,14 +83,10 @@ data.parseFile("candy-data.csv")
 #See parts B and C
 
 ################################################################################
-# WEDNESDAY WORK 
+# WEDNESDAY & FRIDAY WORK 
 ################################################################################
 #PROBLEM 3
 
 # Runs the __init__ function which runs the targetY function 
 line_analysis = LinearAnalysis('sugarpercent')
 line_analysis.runSimpleAnalysis(data)
-
-#analysisData = Parser("csv") 
-#analysisData.parseFile("candy-data.csv")
-#print(analysisData.data) 
